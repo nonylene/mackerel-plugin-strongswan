@@ -22,14 +22,14 @@ Usage of IP address pools
 
 ## Usage
 
-```
+```console
 $ pipenv install
 $ sudo pipenv run main.py # should output metrics
 ```
 
 ### Example mackerel config
 
-```
+```toml
 [plugin.metrics.strongswan]
 command = "/opt/mackerel-plugin-strongswan/.venv/bin/python3 /opt/mackerel-plugin-strongswan/main.py"
 ```
