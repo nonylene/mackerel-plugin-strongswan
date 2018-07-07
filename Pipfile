@@ -1,0 +1,15 @@
+[[source]]
+verify_ssl = true
+url = "https://pypi.org/simple"
+name = "pypi"
+
+[packages]
+vici = "*"
+typing = "*"
+
+[dev-packages]
+ipython = "*"
+pycodestyle = "*"
+
+[requires]
+python_version = "3.5"
