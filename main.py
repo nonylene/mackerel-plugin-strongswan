@@ -74,8 +74,8 @@ def _pools(sess: vici.Session) -> Iterable[Metric]:
     def _create_metrics(pool_name: str, pool: Dict) -> Iterable[Metric]:
         metric_base_name = '{0}.{1}'.format(POOLS_GRAPH_KEY, pool_name)
         return [
-            ('{0}.{1}'.format(metric_base_name, 'size'), int(pool['size'])),
-            ('{0}.{1}'.format(metric_base_name, 'online'), int(pool['online'])),
+            ('{0}.{1}'.format(metric_base_name, POOLS_SIZE_KEY), int(pool['size'])),
+            ('{0}.{1}'.format(metric_base_name, POOLS_ONLINE_KEY), int(pool['online'])),
         ]
 
     metricses = (_create_metrics(name, pool) for name, pool in pools.items())
