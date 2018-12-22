@@ -8,7 +8,7 @@
 
 Active `IKE_SA` counts
 
-### `custon.strongswan.pools.*`
+### `custom.strongswan.pools.*`
 
 Usage of IP address pools
 
