@@ -10,6 +10,3 @@ typing = "*"
 [dev-packages]
 ipython = "*"
 pycodestyle = "*"
-
-[requires]
-python_version = "3.5"
